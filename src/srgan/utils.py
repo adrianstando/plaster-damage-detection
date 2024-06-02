@@ -24,7 +24,7 @@ from torch import nn
 from torch.nn import Module
 from torch.optim import Optimizer
 
-from image_quality_assessment import PSNR, SSIM
+from .image_quality_assessment import PSNR, SSIM
 
 __all__ = [
     "build_iqa_model",
