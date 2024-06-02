@@ -22,7 +22,7 @@ import torch
 from torch import nn, Tensor
 from torch.nn import functional as F_torch
 
-from imgproc import rgb_to_ycbcr_torch
+from .imgproc import rgb_to_ycbcr_torch
 
 __all__ = [
     "MSE", "PSNR", "SSIM"
