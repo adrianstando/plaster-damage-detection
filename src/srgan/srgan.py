@@ -1,7 +1,7 @@
 import torch
 import requests
 import os
-import numpy as np]
+import numpy as np
 
 from torch import nn
 from typing import Optional, Union
