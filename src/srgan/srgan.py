@@ -52,7 +52,7 @@ class SRGAN:
     def __call__(self, img: Union[torch.Tensor, np.ndarray]) -> torch.Tensor:
         # img needs to be in the range [0, 1]
         if isinstance(img, np.ndarray):
-            img = image_to_tensor(img, False, True).to(self.device)
+            img = image_to_tensor(img, False, True).to(self.device).unsqueeze_(0)
         elif isinstance(img, torch.Tensor):
             img = img.half().to(self.device)
         else:
