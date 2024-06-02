@@ -29,7 +29,7 @@ class SRGAN:
 
         if not os.path.exists(self._model_url):
             os.makedirs("./pretrained", exist_ok=True)
-            download_from_url(self._model_url, self._model_weights_pat)
+            download_from_url(self._model_url, self._model_weights_path)
         
         self.model_arch_name = 'srresnet_x4'
         self.model = None
