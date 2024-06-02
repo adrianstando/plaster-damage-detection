@@ -18,7 +18,7 @@ def download_from_url(url: str, path: str) -> None:
 
 
 class SRGAN:
-    def __init__(self, device: Optional[str]) -> None:
+    def __init__(self, device: Optional[str] = None) -> None:
         self.device = device
         if self.device is None:
             self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
