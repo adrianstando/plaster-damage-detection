@@ -40,7 +40,7 @@ class SRGAN:
         sr_model = model.__dict__[self.model_arch_name]()
 
         # Load model weights
-        sr_model = load_pretrained_state_dict(sr_model, True, self._model_weights_path)
+        sr_model = load_pretrained_state_dict(sr_model, False, self._model_weights_path)
     
         # Start the verification mode of the model.
         sr_model.eval()
